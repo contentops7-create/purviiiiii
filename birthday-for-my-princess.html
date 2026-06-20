@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Little Princess • July 8th</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;display=swap');
+        
+        :root {
+            --rose: #C44569;
+            --blush: #FADADD;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .romantic-bg {
+            background: linear-gradient(135deg, #FDF6F0 0%, #F8E8EE 100%);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #C44569, transparent);
+        }
+
+        .love-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .love-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(196 69 105 / 0.1), 0 8px 10px -6px rgb(196 69 105 / 0.1);
+        }
+
+        .photo-frame {
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+        
+        .photo-frame:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 25px -5px rgb(196 69 105 / 0.15);
+        }
+
+        .elegant-text {
+            color: #3F2A33;
+            line-height: 1.8;
+        }
+
+        .romantic-gradient {
+            background: linear-gradient(90deg, #C44569, #E8A0B8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-active {
+            color: #C44569;
+            font-weight: 500;
+        }
+
+        .memory-caption {
+            background: linear-gradient(to top, rgba(63, 42, 51, 0.75), transparent);
+        }
+
+        .heart {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .floating-music {
+            box-shadow: 0 10px 15px -3px rgb(196 69 105 / 0.3);
+        }
+    </style>
+</head>
+<body class="romantic-bg text-[#3F2A33]">
+
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-lg border-b border-[#FADADD] sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-heart text-[#C44569] text-3xl"></i>
+                <div>
+                    <span class="heading-serif text-2xl tracking-tight">For My Princess</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#letter" class="hover:text-[#C44569] transition-colors">My Heart</a>
+                <a href="#story" class="hover:text-[#C44569] transition-colors">Our Story</a>
+                <a href="#memories" class="hover:text-[#C44569] transition-colors">Memories</a>
+                <a href="#secret" class="hover:text-[#C44569] transition-colors">Our Secret</a>
+                <a href="#reasons" class="hover:text-[#C44569] transition-colors">Why I Love You</a>
+            </div>
+            
+            <div class="flex items-center gap-x-2">
+                <div class="px-4 py-1.5 bg-white rounded-full text-xs font-medium flex items-center gap-x-2 border border-[#FADADD]">
+                    <i class="fa-solid fa-calendar text-[#C44569]"></i>
+                    <span class="font-semibold">July 8th</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-[100dvh] flex items-center justify-center relative overflow-hidden pt-8">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <!-- Decorative elements -->
+            <div class="flex justify-center mb-6">
+                <div class="flex items-center gap-x-2">
+                    <div class="h-px w-12 bg-[#C44569]"></div>
+                    <i class="fa-solid fa-heart text-[#C44569] text-xl"></i>
+                    <div class="h-px w-12 bg-[#C44569]"></div>
+                </div>
+            </div>
+            
+            <h1 class="heading-serif text-7xl md:text-8xl leading-none tracking-tighter mb-4">
+                Happy Birthday,<br>
+                <span class="romantic-gradient">My Little Princess</span>
+            </h1>
+            
+            <p class="max-w-md mx-auto text-xl text-[#5C3D4E] mb-10">
+                To my babygirl, my little kid, my everything.<br>
+                July 8th is almost here...
+            </p>
+            
+            <button onclick="startJourney()" 
+                    class="group inline-flex items-center justify-center gap-x-3 bg-[#C44569] hover:bg-[#A83A5A] transition-all text-white px-10 py-4 rounded-3xl text-lg font-medium shadow-xl shadow-[#C44569]/30 hover:shadow-2xl">
+                <span>Begin Our Story</span>
+                <i class="fa-solid fa-arrow-right group-active:translate-x-1 transition-transform"></i>
+            </button>
+            
+            <div class="mt-12 flex justify-center">
+                <div class="flex items-center gap-x-2 text-sm text-[#5C3D4E]">
+                    <i class="fa-solid fa-music"></i>
+                    <span class="font-light">"Love Me Like You Do" will play</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle decorative roses -->
+        <div class="absolute bottom-10 right-10 hidden lg:block opacity-20">
+            <i class="fa-solid fa-heart text-[#C44569] text-[120px]"></i>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LETTER FROM MY HEART -->
+    <section id="letter" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center gap-x-2 bg-white px-5 py-2 rounded-full border border-[#FADADD]">
+                <i class="fa-solid fa-envelope text-[#C44569]"></i>
+                <span class="text-sm font-medium tracking-wider">A LETTER FROM MY HEART</span>
+            </div>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="prose prose-lg elegant-text">
+                <p class="text-2xl leading-tight mb-8">
+                    To my dearest little princess, my babygirl, my playful little kid...
+                </p>
+                
+                <p class="mb-6">
+                    As July 8th approaches, my heart feels fuller than ever. You are not just someone I love — 
+                    you are the person who makes ordinary days feel like magic. When you laugh like my little kid, 
+                    when you look at me with those eyes that hold entire universes, I fall in love with you all over again.
+                </p>
+                
+                <p class="mb-6">
+                    You are my little princess who still gets excited over the smallest things. You are my babygirl 
+                    who makes me want to protect you from the whole world. And you are the woman who makes me want 
+                    to be the best version of myself every single day.
+                </p>
+                
+                <p class="italic text-[#5C3D4E]">
+                    "I don’t need the whole world to love me... I just need my little princess to know 
+                    that she is my entire world."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- SECTION 2: OUR STORY -->
+    <section id="story" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <span class="text-[#C44569] text-sm font-semibold tracking-[3px]">CHAPTER ONE</span>
+            <h2 class="heading-serif text-5xl mt-2">Our Beautiful Story</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="love-card bg-white p-8 rounded-3xl border border-[#FADADD]">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <i class="fa-solid fa-heart text-[#C44569]"></i>
+                    <span class="font-semibold">The Beginning</span>
+                </div>
+                <p class="elegant-text">
+                    The moment I first saw you smile, something inside me changed forever. 
+                    You weren’t just beautiful — you were the kind of beautiful that makes a man 
+                    want to be better. My little princess had arrived in my life.
+                </p>
+            </div>
+            
+            <div class="love-card bg-white p-8 rounded-3xl border border-[#FADADD]">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <i class="fa-solid fa-heart text-[#C44569]"></i>
+                    <span class="font-semibold">Every Day Since</span>
+                </div>
+                <p class="elegant-text">
+                    Since that day, you’ve been my favorite person to talk to, my favorite person to 
+                    laugh with, and my favorite person to love. You turned my world into the most 
+                    beautiful place just by being in it, my babygirl.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MEMORIES GALLERY -->
+    <section id="memories" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <span class="text-[#C44569] text-sm font-semibold tracking-[3px]">CHAPTER TWO</span>
+            <h2 class="heading-serif text-5xl mt-2">Memories We Made</h2>
+            <p class="mt-3 text-[#5C3D4E]">Every photo holds a piece of my heart for you, my little princess</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <!-- Photo 1 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/1011/600/450" class="w-full h-full object-cover" alt="You smiling like my little princess">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">The day you smiled like my little princess</p>
+                </div>
+            </div>
+            
+            <!-- Photo 2 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/1005/600/450" class="w-full h-full object-cover" alt="Holding hands">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">When you held my hand like my babygirl</p>
+                </div>
+            </div>
+            
+            <!-- Photo 3 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/1016/600/450" class="w-full h-full object-cover" alt="Laughing together">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">Your laugh — my favorite sound in the world</p>
+                </div>
+            </div>
+            
+            <!-- Photo 4 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/160/600/450" class="w-full h-full object-cover" alt="Sunset moment">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">Golden hour with my little kid</p>
+                </div>
+            </div>
+            
+            <!-- Photo 5 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/201/600/450" class="w-full h-full object-cover" alt="Quiet moment">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">Just us... my favorite kind of moment</p>
+                </div>
+            </div>
+            
+            <!-- Photo 6 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/251/600/450" class="w-full h-full object-cover" alt="You being cute">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">When you acted like my playful little kid</p>
+                </div>
+            </div>
+            
+            <!-- Photo 7 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/29/600/450" class="w-full h-full object-cover" alt="Beautiful you">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">My elegant little princess</p>
+                </div>
+            </div>
+            
+            <!-- Photo 8 -->
+            <div class="photo-frame group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gray-100">
+                <img src="https://picsum.photos/id/1009/600/450" class="w-full h-full object-cover" alt="Us together">
+                <div class="memory-caption absolute bottom-0 left-0 right-0 p-5 text-white">
+                    <p class="font-medium">The best decision I ever made — choosing you</p>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-8 text-sm text-[#5C3D4E]">Replace these with your real photos • They will look even more beautiful</p>
+    </section>
+
+    <!-- SECTION 4: SECRET MEMORIES (PASSWORD PROTECTED) -->
+    <section id="secret" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="bg-white border border-[#FADADD] rounded-3xl p-10 md:p-14 shadow-xl">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-14 h-14 bg-[#FADADD] rounded-full mb-4">
+                    <i class="fa-solid fa-lock text-[#C44569] text-3xl"></i>
+                </div>
+                <h2 class="heading-serif text-4xl">Our Secret World</h2>
+                <p class="mt-2 text-[#5C3D4E]">Only for us, my love</p>
+            </div>
+            
+            <!-- Password Form -->
+            <div id="password-form">
+                <div class="max-w-xs mx-auto">
+                    <p class="text-center text-sm mb-4 text-[#5C3D4E]">Enter our special code to unlock the most precious memories</p>
+                    
+                    <div class="flex gap-x-2">
+                        <input id="password-input" type="password" placeholder="Our secret code" 
+                               class="flex-1 border border-[#FADADD] focus:border-[#C44569] rounded-2xl px-5 py-3 outline-none">
+                        <button onclick="unlockSecret()" 
+                                class="bg-[#C44569] hover:bg-[#A83A5A] transition-colors text-white px-8 rounded-2xl font-medium">
+                            Unlock
+                        </button>
+                    </div>
+                    <p class="text-xs text-center mt-3 text-[#C44569]">Hint: babygirl</p>
+                </div>
+            </div>
+            
+            <!-- Hidden Content -->
+            <div id="secret-content" class="hidden">
+                <div class="text-center mb-8">
+                    <p class="text-[#C44569] font-medium">Welcome back, my love ❤️</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-[#FDF6F0] p-6 rounded-2xl">
+                        <h4 class="font-semibold mb-3 flex items-center gap-x-2">
+                            <i class="fa-solid fa-heart text-[#C44569]"></i> 
+                            <span>Private Letter</span>
+                        </h4>
+                        <p class="text-sm elegant-text">
+                            My little princess... these moments we’ve shared in secret are the ones I hold closest to my heart. 
+                            You are my babygirl even when the world doesn’t see it. I promise to always protect this love we have.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Special Hidden Memories</h4>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="aspect-square rounded-2xl overflow-hidden">
+                                <img src="https://picsum.photos/id/1006/300/300" class="w-full h-full object-cover" alt="Secret memory 1">
+                            </div>
+                            <div class="aspect-square rounded-2xl overflow-hidden">
+                                <img src="https://picsum.photos/id/133/300/300" class="w-full h-full object-cover" alt="Secret memory 2">
+                            </div>
+                            <div class="aspect-square rounded-2xl overflow-hidden">
+                                <img src="https://picsum.photos/id/180/300/300" class="w-full h-full object-cover" alt="Secret memory 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: REASONS I LOVE YOU -->
+    <section id="reasons" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <span class="text-[#C44569] text-sm font-semibold tracking-[3px]">CHAPTER THREE</span>
+            <h2 class="heading-serif text-5xl mt-2">Why I Love My Little Princess</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6 max-w-4xl mx-auto">
+            <div class="flex gap-x-4">
+                <div class="mt-1"><i class="fa-solid fa-heart text-[#C44569]"></i></div>
+                <div>
+                    <span class="font-semibold">Because you’re still my little kid</span>
+                    <p class="text-sm mt-1 text-[#5C3D4E]">You get excited over the smallest things and it melts me every time.</p>
+                </div>
+            </div>
+            <div class="flex gap-x-4">
+                <div class="mt-1"><i class="fa-solid fa-heart text-[#C44569]"></i></div>
+                <div>
+                    <span class="font-semibold">Because you’re my babygirl</span>
+                    <p class="text-sm mt-1 text-[#5C3D4E]">Even on your strongest days, you let me take care of you.</p>
+                </div>
+            </div>
+            <div class="flex gap-x-4">
+                <div class="mt-1"><i class="fa-solid fa-heart text-[#C44569]"></i></div>
+                <div>
+                    <span class="font-semibold">Because you’re my little princess</span>
+                    <p class="text-sm mt-1 text-[#5C3D4E]">You deserve to be treated like royalty, and I love doing it.</p>
+                </div>
+            </div>
+            <div class="flex gap-x-4">
+                <div class="mt-1"><i class="fa-solid fa-heart text-[#C44569]"></i></div>
+                <div>
+                    <span class="font-semibold">Because your smile still gives me butterflies</span>
+                    <p class="text-sm mt-1 text-[#5C3D4E]">After all this time, it never gets old.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL SECTION: PROMISES + BIRTHDAY -->
+    <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="heading-serif text-5xl mb-8">My Promises to You</h2>
+            
+            <div class="space-y-6 text-left elegant-text mb-12">
+                <p>I promise to always make you feel like my little princess.</p>
+                <p>I promise to protect your heart the way you protect mine.</p>
+                <p>I promise to keep making new memories with my babygirl until we’re old and gray.</p>
+                <p>I promise that no matter how many birthdays come, you will always be my favorite person.</p>
+            </div>
+            
+            <div class="bg-white border border-[#FADADD] rounded-3xl p-10">
+                <h3 class="heading-serif text-4xl mb-4">Happy Birthday, My Love</h3>
+                <p class="text-xl mb-6">July 8th is going to be special because it’s the day the world gave me you.</p>
+                
+                <div class="flex justify-center">
+                    <div class="inline-flex items-center gap-x-2 bg-[#FDF6F0] px-6 py-2 rounded-full">
+                        <i class="fa-solid fa-heart text-[#C44569]"></i>
+                        <span class="font-medium">I love you more than words can say, my little princess</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Music Player -->
+    <div id="music-player" class="hidden fixed bottom-6 right-6 bg-white shadow-2xl border border-[#FADADD] rounded-3xl px-5 py-3 flex items-center gap-x-4 z-50">
+        <div class="flex items-center gap-x-3">
+            <button onclick="toggleMusic()" class="w-9 h-9 flex items-center justify-center text-[#C44569]">
+                <i id="music-icon" class="fa-solid fa-pause text-xl"></i>
+            </button>
+            <div>
+                <div class="text-xs font-medium">Love Me Like You Do</div>
+                <div class="text-[10px] text-[#5C3D4E]">Ellie Goulding</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="love-me-like-you-do.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <footer class="text-center py-8 text-xs text-[#5C3D4E]">
+        Made with endless love for my little princess • July 8th
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#C44569');
+        }
+        
+        let musicStarted = false;
+        const audio = document.getElementById('bg-music');
+        
+        function startJourney() {
+            // Start music
+            if (!musicStarted) {
+                audio.play().catch(() => {
+                    // Autoplay blocked, will start on user interaction
+                });
+                musicStarted = true;
+                document.getElementById('music-player').classList.remove('hidden');
+                document.getElementById('music-player').classList.add('flex');
+            }
+            
+            // Scroll to first section
+            document.getElementById('letter').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        function toggleMusic() {
+            const icon = document.getElementById('music-icon');
+            
+            if (audio.paused) {
+                audio.play();
+                icon.classList.remove('fa-play');
+                icon.classList.add('fa-pause');
+            } else {
+                audio.pause();
+                icon.classList.remove('fa-pause');
+                icon.classList.add('fa-play');
+            }
+        }
+        
+        // Password unlock for secret section
+        function unlockSecret() {
+            const input = document.getElementById('password-input').value.toLowerCase().trim();
+            const correctPassword = "babygirl"; // ← Change this password if you want
+            
+            if (input === correctPassword) {
+                document.getElementById('password-form').classList.add('hidden');
+                document.getElementById('secret-content').classList.remove('hidden');
+                
+                // Optional: confetti effect
+                createHeartConfetti();
+            } else {
+                const inputField = document.getElementById('password-input');
+                inputField.style.borderColor = '#C44569';
+                inputField.placeholder = "Wrong code, try again ❤️";
+                
+                setTimeout(() => {
+                    inputField.style.borderColor = '#FADADD';
+                    inputField.placeholder = "Our secret code";
+                }, 1500);
+            }
+        }
+        
+        function createHeartConfetti() {
+            const colors = ['#C44569', '#E8A0B8', '#FADADD'];
+            for (let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('i');
+                    heart.className = `fa-solid fa-heart text-[#C44569] fixed z-[9999]`;
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = '-20px';
+                    heart.style.fontSize = (Math.random() * 18 + 12) + 'px';
+                    heart.style.opacity = Math.random() * 0.7 + 0.5;
+                    heart.style.transition = 'transform 3s linear, opacity 3s linear';
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.style.transform = `translateY(${window.innerHeight + 100}px)`;
+                        heart.style.opacity = '0';
+                        
+                        setTimeout(() => {
+                            heart.remove();
+                        }, 3000);
+                    }, 50);
+                }, i * 8);
+            }
+        }
+        
+        // Allow Enter key for password
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeTailwind();
+            
+            const passwordInput = document.getElementById('password-input');
+            if (passwordInput) {
+                passwordInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        unlockSecret();
+                    }
+                });
+            }
+            
+            // Optional: Start music on any first click (if user didn't click button)
+            let firstClick = true;
+            document.body.addEventListener('click', function() {
+                if (firstClick && !musicStarted) {
+                    // Don't auto-start on every click, only if they haven't started yet
+                    firstClick = false;
+                }
+            }, { once: true });
+            
+            // Make sure audio is ready
+            audio.volume = 0.7;
+        });
+        
+        // Easter egg: Click the heart in navbar to show hearts
+        document.querySelector('.fa-heart').addEventListener('click', function() {
+            createHeartConfetti();
+        });
+    </script>
+</body>
+</html>
